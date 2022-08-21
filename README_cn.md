@@ -59,16 +59,16 @@ $ source devel/setup.bash
 
 用Gazebo仿真请运行：
 ```sh
-$ roslaunch elfin_gazebo elfin3_empty_world.launch
+$ roslaunch elfin_gazebo elfin15_F_empty_world.launch
 ```
 
 运行MoveIt!模块, RViz界面:
 ```sh
-$ roslaunch elfin3_moveit_config moveit_planning_execution.launch
+$ roslaunch elfin15_F_moveit_config moveit_planning_execution.launch
 ```
 如果你此时不想运行RViz界面，请用以下命令:
 ```sh
-$ roslaunch elfin3_moveit_config moveit_planning_execution.launch display:=false
+$ roslaunch elfin15_F_moveit_config moveit_planning_execution.launch display:=false
 ```
 
 运行后台程序及Elfin Control Panel界面：
@@ -95,7 +95,7 @@ elfin_ethernet_name: eth0
 
 加载Elfin机器人模型：
 ```sh
-$ roslaunch elfin_robot_bringup elfin3_bringup.launch
+$ roslaunch elfin_robot_bringup elfin15_F_bringup.launch
 ```
 启动Elfin硬件，Elfin的控制需要操作系统的实时性支持，运行下面的命令前请先为你的Linux系统内核打好实时补丁。打补丁的方法可以参考这个[教程](http://www.jianshu.com/p/8787e45a9e01)。Elfin机械臂有两种不同版本的EtherCAT从站，在启动硬件前，请先确认你的Elfin的从站版本。
 ```sh
@@ -115,11 +115,11 @@ $ roslaunch elfin_robot_bringup elfin_ros_control_v3.launch
 
 运行MoveIt!模块, RViz界面:
 ```sh
-$ roslaunch elfin3_moveit_config moveit_planning_execution.launch
+$ roslaunch elfin15_F_moveit_config moveit_planning_execution.launch
 ```
 如果你此时不想运行RViz界面，请用以下命令:
 ```sh
-$ roslaunch elfin3_moveit_config moveit_planning_execution.launch display:=false
+$ roslaunch elfin15_F_moveit_config moveit_planning_execution.launch display:=false
 ```
 
 运行后台程序及Elfin Control Panel界面：

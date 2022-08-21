@@ -55,16 +55,16 @@ In the following the commands for Elfin3 are given. For Elfin5 or Elfin10, simpl
 
 Bring up the simulated robot in Gazebo:
 ```sh
-$ roslaunch elfin_gazebo elfin3_empty_world.launch
+$ roslaunch elfin_gazebo elfin15_F_empty_world.launch
 ```
 
 Start up RViz with a configuration including the MoveIt! Motion Planning plugin:
 ```sh
-$ roslaunch elfin3_moveit_config moveit_planning_execution.launch
+$ roslaunch elfin15_F_moveit_config moveit_planning_execution.launch
 ```
 If you don't want to start up RViz at the moment, just run:
 ```sh
-$ roslaunch elfin3_moveit_config moveit_planning_execution.launch display:=false
+$ roslaunch elfin15_F_moveit_config moveit_planning_execution.launch display:=false
 ```
 
 Start up elfin basic api and "Elfin Control Panel" interface:
@@ -94,7 +94,7 @@ elfin_ethernet_name: eth0
 
 Load Elfin robot model：
 ```sh
-$ roslaunch elfin_robot_bringup elfin3_bringup.launch
+$ roslaunch elfin_robot_bringup elfin15_F_bringup.launch
 ```
 
 Bring up the hardware of Elfin. Before bringing up the hardware, you should setup Linux with PREEMPT_RT properly. There is a [tutorial](https://wiki.linuxfoundation.org/realtime/documentation/howto/applications/preemptrt_setup). There are two versions of elfin EtherCAT slaves. Please bring up the hardware accordingly.
@@ -116,11 +116,11 @@ $ roslaunch elfin_robot_bringup elfin_ros_control_v3.launch
 
 Start up RViz with a configuration including the MoveIt! Motion Planning plugin:
 ```sh
-$ roslaunch elfin3_moveit_config moveit_planning_execution.launch
+$ roslaunch elfin15_F_moveit_config moveit_planning_execution.launch
 ```
 If you don't want to start up RViz at the moment, just run:
 ```sh
-$ roslaunch elfin3_moveit_config moveit_planning_execution.launch display:=false
+$ roslaunch elfin15_F_moveit_config moveit_planning_execution.launch display:=false
 ```
 
 Start up elfin basic api and "Elfin Control Panel" interface:
