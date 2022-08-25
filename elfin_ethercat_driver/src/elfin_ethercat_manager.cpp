@@ -267,7 +267,7 @@ bool EtherCatManager::initSoem(const std::string& ifname) {
       then proceeding through 40 send/recieve cycles each waiting up to 50 ms for a
       response about the status. 
   */
-  for(int i=1;i<4;i+){
+  for(int i=1;i<4;i++){
     ec_slave[i].state = EC_STATE_OPERATIONAL;
     ec_send_processdata();
     ec_receive_processdata(EC_TIMEOUTRET);
